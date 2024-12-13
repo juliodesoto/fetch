@@ -14,6 +14,8 @@
 
     <script>
 
+        const lista = document.querySelector("ul");
+
 fetch("prueba.txt")
 .then(respuesta => {
     console.log(respuesta);
@@ -24,10 +26,12 @@ fetch("prueba.txt")
     // aquí es donde existen los datos
     // crear un li con cada nombre de la lista de personas
 
-    let li = document.createElement("li");
-    
-
-    
+    for( let i = 0; i < personas.length; i++){
+        let li = document.createElement("li");
+        li.innerText = personas[i].nombre;
+        lista.appendChild(li);
+    }
+  
 })
 
 
