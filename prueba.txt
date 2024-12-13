@@ -1,1 +1,5 @@
-Cualquier cosa
+[
+    { "nombre" : "Pilar", "edad" : 25},
+    { "nombre" : "Julio", "edad" : 38},
+    { "nombre" : "Victoriano", "edad" : 28}
+]
